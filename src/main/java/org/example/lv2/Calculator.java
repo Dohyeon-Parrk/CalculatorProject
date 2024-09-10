@@ -11,7 +11,7 @@ public class Calculator {
         this.result = new ArrayList<Integer>();
     }
 
-    public int calculate(int num1, int num2, char op) {
+    public void calculate(int num1, int num2, char op) {
         int answer = 0;
         boolean valid = true;
 
@@ -40,7 +40,6 @@ public class Calculator {
         if (valid) {
             saveResult(answer);
         }
-        return answer;
     }
 
     // save
